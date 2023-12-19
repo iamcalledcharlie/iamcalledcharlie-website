@@ -1,5 +1,5 @@
 function updateCountdown() {
-    const endDate = new Date("2023-12-310T00:00:00").getTime(); // Set your launch date and time here
+    const endDate = new Date("2023-12-31T00:00:00").getTime(); // Set your launch date and time here
     const now = new Date().getTime();
     const timeRemaining = endDate - now;
 
