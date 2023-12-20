@@ -15,14 +15,22 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-    color: #007BFF;
+h1 span {
+    transition: color 0.5s;
+}
+
+.christmas-lights {
+    border-radius: 50%;
+    border: 5px dotted red; /* Red dots for Christmas lights */
+    padding: 20px;
+    display: inline-block;
 }
 
 .countdown {
     font-size: 24px;
     margin-top: 20px;
 }
+
 #countdown-timer {
     display: flex;
     justify-content: space-between;
@@ -47,3 +55,20 @@ h1 {
     font-size: 14px;
     font-weight: normal;
 }
+@keyframes twinkle {
+    0% { border-color: red; }
+    25% { border-color: green; }
+    50% { border-color: blue; }
+    75% { border-color: yellow; }
+    100% { border-color: red; }
+}
+
+.christmas-lights {
+    border-radius: 50%;
+    border: 5px dotted red; /* Initial color */
+    padding: 20px;
+    display: inline-block;
+    animation: twinkle 2s infinite; /* Apply the twinkling effect */
+}
+
+
